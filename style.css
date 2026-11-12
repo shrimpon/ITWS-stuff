@@ -1,0 +1,522 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7f8;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #123b35;
+    color: white;
+    padding: 20px 5%;
+}
+
+header h2 {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+/* Home Page */
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 500px;
+    padding: 50px 8%;
+    background-image: url("images/solar-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-content {
+    max-width: 550px;
+    color: white;
+}
+
+.home-content h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.home-button,
+.read-more {
+    display: inline-block;
+    background-color: #f4c542;
+    color: #123b35;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.home-button:hover,
+.read-more:hover {
+    background-color: #e0ae20;
+}
+
+.introduction {
+    text-align: center;
+    padding: 60px 10%;
+}
+
+.introduction h2 {
+    color: #123b35;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.introduction p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* About Us Page */
+.about {
+    text-align: center;
+    padding: 70px 10%;
+    background-color: white;
+}
+
+.about h1 {
+    color: #123b35;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 25px;
+    border-radius: 10px;
+}
+
+.mission-vision {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 8%;
+}
+
+.mission,
+.vision {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.mission h2,
+.vision h2 {
+    color: #123b35;
+    margin-bottom: 15px;
+}
+
+.mission p,
+.vision p {
+    line-height: 1.7;
+}
+
+/* Services Page */
+.services {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.services h1 {
+    color: #123b35;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.services > p {
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.service-card {
+    width: 250px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.service-card h2 {
+    color: #123b35;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    line-height: 1.6;
+}
+
+/* Solar Packages Page */
+.packages {
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.packages h1 {
+    color: #123b35;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.packages p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.package-image {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.package-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.package-table th {
+    background-color: #123b35;
+    color: white;
+    padding: 15px;
+}
+
+.package-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.package-table tr:hover {
+    background-color: #f0f5f2;
+}
+
+.package-note {
+    margin-top: 25px;
+    font-style: italic;
+    color: #555;
+}
+
+/* Warranty Page */
+.warranty {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.warranty h1 {
+    color: #123b35;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.warranty > p {
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.warranty-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.warranty-card {
+    width: 300px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.warranty-card h2 {
+    color: #d49b16;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.warranty-card h3 {
+    color: #123b35;
+    margin-bottom: 15px;
+}
+
+.warranty-card p {
+    line-height: 1.6;
+}
+
+.warranty-note {
+    background-color: #e8efec;
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+.warranty-note h2 {
+    color: #123b35;
+    margin-bottom: 10px;
+}
+
+.warranty-note p {
+    line-height: 1.6;
+}
+
+/* Benefits of Solar Energy */
+.benefits {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #f4f7f4;
+}
+
+.benefits h2 {
+    font-size: 30px;
+    color: #1b4332;
+    margin-bottom: 15px;
+}
+
+.benefits > p {
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.benefits-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefit-card {
+    width: 220px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card h3 {
+    color: #2d6a4f;
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* FAQ Page */
+.faqs {
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 5%;
+}
+
+.faqs h1 {
+    color: #123b35;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.faqs > p {
+    text-align: center;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.faqs details {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.faqs summary {
+    color: #123b35;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faqs details p {
+    margin-top: 15px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Contact Page */
+.contact {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.contact h1 {
+    color: #123b35;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact > p {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    line-height: 1.7;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.contact-card {
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card h2 {
+    color: #123b35;
+    margin-bottom: 15px;
+}
+
+.contact-card p {
+    line-height: 1.6;
+}
+
+.location {
+    margin-top: 45px;
+}
+
+.location h2 {
+    color: #123b35;
+    margin-bottom: 15px;
+}
+
+.location p {
+    margin-bottom: 20px;
+}
+
+.location a {
+    display: inline-block;
+    background-color: #123b35;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.location a:hover {
+    background-color: #1d5c50;
+}
+
+/* Footer */
+footer {
+    background-color: #123b35;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .home {
+        min-height: 400px;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+}
